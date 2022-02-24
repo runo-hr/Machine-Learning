@@ -10,7 +10,7 @@ The mapping function is known as the hypothesis.
 
 ### Hypothesis  
 
-![hypothesis](/Linear-regression/images/hypothesis.png) 
+![hypothesis](images/hypothesis.png) 
 
 For linear regression, the hypoothesis function is the equation of a straight line.  
 
