@@ -108,7 +108,7 @@ Part 4 in [this](ex1.m).
 ![contour](images/contour.png)
 
 The red x marks the learned values of theta. This spot coincides with the purple regions of the surface plot with the lowest value of cost.  
-<blockquote>
+
 (theta_0, theta_1) = (-3.630291, 1.166362)  
 *__linear hypothesis = -3.630291 + 1.166362 * x__*
-</blockquote>
+
