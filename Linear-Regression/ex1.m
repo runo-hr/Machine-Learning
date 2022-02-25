@@ -84,8 +84,11 @@ fprintf(' -3.6303\n  1.1664\n\n');
 
 % Plot the linear fit
 hold on; % keep previous plot visible
-plot(X(:,2), X*theta, '-')
-legend('Training data', 'Linear regression')
+plot(X(:,2), X*theta, '-');
+plot(X(:,2), y, 'rx', 'MarkerSize', 10); 
+xlabel('Population of City in 10,000s');
+ylabel('Profit in $10,000s');
+legend( 'Linear hypothesis','Training data');
 hold off % don't overlay any more plots on this figure
 
 % Predict values for population sizes of 35,000 and 70,000

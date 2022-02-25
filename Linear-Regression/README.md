@@ -66,4 +66,52 @@ To minimize the cost function gradient descent updates the parameters theta unti
 
   Notice that when j is 0 ,ie theta is the bias, the partial derivative yields a constant 1, since theta_0 is not a coefficient of an input.  
 
-This method of gradient descent is known as batch gradient descent. Each step of gradient descent uses all the training examples.    
+This method of gradient descent is known as batch gradient descent. Each step of gradient descent uses all the training examples.  
+
+## Linear Regression with one variable  
+__Problem Statement__  
+Suppose you are the CEO of a restaurant franchise and are considering different cities to open a new outlet.  
+The chain already has trucks in various cities and you have data for profits and populations from the cities.  
+Implement linear regression to predict profits of a food truck.  
+
+*[This file](ex1.m) steps through the exercise. The main steps of the exercise are discussed below.*  
+
+__Data__  
+Part 2 in [this](ex1.m).  
+[This Dataset](ex1data1.txt) has 97 training samples, one row for each sample. Every row has two values. The first is the population x, and the second, the profit y.  
+Onwards we shall refer to the first column of the dataset as X, and the second as y
+
+[Plot Data](plotData.m) generates the following figure.  
+
+![data](images/data.png)  
+
+From this plot, we can observe that when the population of a city increases, so do the profits of food trucks.  
+
+__Cost and Gradient Descent__  
+Part 3 in [this](ex1.m).  
+* Add a column of ones to X. This is the column of bias terms whose coefficient will be theta_0.  
+* Initialize the parameters theta to zero.  
+* Gradient Descent settings:  
+  * Iterations : 1500
+  * Learning rate : 0.01
+* Run gradient descent by calling [gradient descent function](gradientDescent.m) with the iterations, learning rate, X and y.  
+This function makes calls to [compute cost ](computeCost.m) to calculate the cost after every iteration of gradient descent.  
+Thetas with the lowest cost are returned as the learned parameters.
+
+* Plot the linear fit.
+
+  ![limear-fit](images/linear-hypothesis.png)
+
+__Visualizing Gradient Descent__  
+Part 4 in [this](ex1.m).  
+*Surface Plot*  
+![surface](images/surface.png)  
+
+*Contour Plot*  
+![contour](images/contour.png)
+
+The red x marks the learned values of theta. This spot coincides with the purple regions of the surface plot with the lowest value of cost.  
+<quote>
+(theta_0, theta_1) = (-3.630291, 1.166362)  
+*__linear hypothesis = -3.630291 + 1.166362 * x__*
+</quote>
