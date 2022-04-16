@@ -120,23 +120,23 @@ want to know what a good market price would be.
 Implement linear regression with multiple variables to predict the price of houses.  
 
 ### Dataset
-[This dataset](/ex1data2.txt) has three 47 rows and 3 columns.   
+[This dataset](ex1data2.txt) has three 47 rows and 3 columns.   
 The first two columns are size of the house in sq-ft and number of bedrooms.  
 The last column is the price of the houses.  
 
 ### Solution  
 This solution uses two input variables but will work in situations with more input variables.  
-[This](/ex1_multi.m) file steps through the solution.  
+[This](ex1_multi.m) file steps through the solution.  
 Below are the main steps.    
 #### Feature Normalization
 House sizes are about 1000 times the number of bedrooms. When features differ by orders of magnitude, first performing feature scaling can make gradient descent converge much more quickly. In addition, the large features will not 'over influence' the regression model.  
-[Feature Normalize](/featureNormalize.m) uses mean normalization to scale the features to values between 0 and 1.  
+[Feature Normalize](featureNormalize.m) uses mean normalization to scale the features to values between 0 and 1.  
 Mean normalization steps:  
 * Subtract the mean of a feature from every entry.
 * Divide the result by the standard deviation of that feature.  
 
 #### Gradient Descent  
-[Gradient Descent](/gradientDescentMulti.m) solves for the optimum values of theta.  
+[Gradient Descent](gradientDescentMulti.m) solves for the optimum values of theta.  
 Below is a plot of the cost function at various iterations of gradient descent.  
 ![cost-function-multi](images/gradientdescentmulti.png)  
 
