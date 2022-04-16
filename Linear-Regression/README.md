@@ -138,7 +138,7 @@ Mean normalization steps:
 #### Gradient Descent  
 [Gradient Descent](/gradientDescentMulti.m) solves for the optimum values of theta.  
 Below is a plot of the cost function at various iterations of gradient descent.  
-![cost-function-multi](/images/gradientdescentmulti.png)  
+![cost-function-multi](images/gradientdescentmulti.png)  
 
 * Theta computed from gradient descent:   
 __[334302 100087.116006 3673.548451]__  
