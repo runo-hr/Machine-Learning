@@ -105,7 +105,11 @@ fprintf('\n');
 % Recall that the first column of X is all-ones. Thus, it does
 % not need to be normalized.
 price = 0; % You should change this
+X_ = [1650 3];
+X_ = featureNormalize(X_);
+X_ = [ones(1, 1) X_];
 
+price = X_ * theta;
 
 % ============================================================
 
@@ -151,6 +155,10 @@ fprintf('\n');
 % ====================== YOUR CODE HERE ======================
 price = 0; % You should change this
 
+X_ = [1650 3];
+X_ = [ones(1, 1) X_];
+
+price = X_ * theta;
 
 % ============================================================
 
