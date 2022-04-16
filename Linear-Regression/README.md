@@ -65,6 +65,7 @@ To minimize the cost function gradient descent updates the parameters theta unti
 
 This method of gradient descent is known as batch gradient descent. Each step of gradient descent uses all the training examples.  
 
+# The Project
 ## Linear Regression with one variable  
 __Problem Statement__  
 Suppose you are the CEO of a restaurant franchise and are considering different cities to open a new outlet.  
