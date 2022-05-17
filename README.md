@@ -7,7 +7,7 @@ Click the links below to navigate to different projects.
 1. [Linear Regression](/Linear-Regression/)
 2. [Logistic Regression](/Logistic-Regression/)
 3. [Multi-Class Classification and Neural Networks](/Multi-class-Classification-and-Neural-Networks/)
-4. [Neursl Network Learning](/Neural-Network-Learning/)
+4. [Neural Network Learning](/Neural-Network-Learning/)
 5. [Support vector Machines](/Support-Vector-Machines/)
 6. [K-means clustering and PCA](/K-Means-Clustering-and-PCA/)
 7. [Anomaly Detection and Recommender Systems](/Anomaly-Detection-and-Recommender-Systems/)
